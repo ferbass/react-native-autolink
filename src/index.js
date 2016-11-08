@@ -51,7 +51,7 @@ export default class Autolink extends Component {
 
   selectURL(url, fallback) {
     if (this.props.webFallback) {
-      return Linking.canOpenURL(url) ? url : fallback;
+      return fallback;
     }
 
     return url;
